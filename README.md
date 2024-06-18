@@ -34,3 +34,18 @@ Consider the following dataset: https://archive.ics.uci.edu/dataset/360/air+qual
 
 Train a neural network for sequences of your choice (LSTM, GRU, Convolutional, Clockwork RNN, ...) to predict the Benzene (C6H6 column) based on the sensor measurements timeseries (PT08.* columns) being fed in input to the recurrent model. Evaluate the predictive accuracy of the network on the task (using appropriately training/validation splits).  Confront the perfomance of this model, with another recurrent neural network trained to predict benzene one-step-ahead, i.e. given the current benzene measuement, predict its next value.
 Show and compare performance of both settings.
+
+## Midterm 4
+
+This midterm is based on reading and summarizing the main findings of a paper.
+
+Students are expected to deliver a short presentation (no more than 8 slides) covering the following content:
+1. Introduction to the problem
+2. Model description
+3. Key catch of the model, represented by a commented equation
+4. Key (empirical) result
+5. Comment on novelties, strong points and weaknesses
+
+Particular attention will be paid to the technical depth and understanding of the paper, which needs to be conveyed through point 3 above.
+
+**Chosen Paper**: Junyoung Chung, Sungjin Ahn, Yoshua Bengio, *"Hierarchical Multiscale Recurrent Neural Networks"*, ICLR 2017.

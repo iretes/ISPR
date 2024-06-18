@@ -1,0 +1,19 @@
+\footnotesize{
+\begin{table}
+\caption{Results for character-level language modeling.}
+\begin{tabular}
+{lr|lr|lr}
+\toprule
+\multicolumn{2}{c|}{\textbf{Penn Treebank}} & \multicolumn{2}{c|}{\textbf{Text8}} & \multicolumn{2}{c}{\textbf{Hutter Prize Wikipedia}}\\
+\midrule
+\textbf{Model} & \textbf{BPC} & \textbf{Model} & \textbf{BPC} & \textbf{Model} & \textbf{BPC}\\
+LayerNormHyperNetworks \cite{ha2016hypernetworks} & \textbf{1.23} &  BatchNorm LSTM \cite{cooijmans2016recurrent} & 1.36 & Recurrent Highway Networks \cite{zilly2017recurrent} & 1.32\\
+{\usebeamercolor[fg]{structure}LayerNorm HM-LSTM Sampling} & 1.27 & {\usebeamercolor[fg]{structure}HM-LSTM} & 1.32 & decomp8 \cite{mahoney2011large} ** & \textbf{1.28}\\
+{\usebeamercolor[fg]{structure}LayerNorm HM-LSTM Soft *} & 1.27 & {\usebeamercolor[fg]{structure}LayerNorm HM-LSTM} & \textbf{1.29} & {\usebeamercolor[fg]{structure}HM-LSTM} & 1.34\\
+{\usebeamercolor[fg]{structure}LayerNorm HM-LSTM Step} & 1.25 & & & {\usebeamercolor[fg]{structure}LayerNorm HM-LSTM} & 1.32\\
+{\usebeamercolor[fg]{structure}LayerNorm HM-LSTM Step \& SA} & 1.24 & &\\
+\bottomrule
+\end{tabular}\\
+\scriptsize{* a variant of HM-LSTM that does not discretize the boundary detector states; ** compression-based model (non-neural)}
+\end{table}
+}
